@@ -12,7 +12,7 @@ const App = () => {
   return (
     <>  
     {showLogin? <LoginPopup setShowLogin={setShowLogin}/> : <></>}
-     <div className='w-[80%] m-auto'>
+     <div className='md:w-[80%] sm:w-[90%] w-full px-4 sm:px-0 m-auto'>
       <Navbar setShowLogin  = {setShowLogin}/>
       <Routes>
         < Route path = '/' element={<Home/>}/>
